@@ -1,4 +1,4 @@
-import hero from './hero.jpg'
+
 import Attijari from './Attijari.png'
 import TPR from './TPR.png'
 import logo from './logo.svg'
@@ -11,7 +11,7 @@ import Certificat from './Certificat.jpg'
 import humanrights from './humanrights.jpg'
 import IHL from './IHL.jpg'
 export {
-    hero,
+    
     Attijari ,
     TPR,
     Bgroupe,
