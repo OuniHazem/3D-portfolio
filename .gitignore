@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Personal supporting documents must stay off the public portfolio
+/src/assets/images/StageA.jpg
+/src/assets/images/StageB.jpg
+/src/assets/images/Master.jpg
+/src/assets/images/Licence.jpg
+/src/assets/images/Certificat.jpg
+/src/assets/images/humanrights.jpg
+/src/assets/images/IHL.jpg

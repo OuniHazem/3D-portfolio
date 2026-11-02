@@ -1,13 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { CTA } from "../components";
 import { diplomas, certificates } from "../constants";
-import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
     <>
-      <section className='max-container my-6'> {/* Adjusted margin class from 'my-12' to 'my-6' */}
+      <section className='max-container my-6'>
         <h1 className='head-text'>
           My{" "}
           <span className='blue-gradient_text drop-shadow font-semibold'>
@@ -15,25 +12,16 @@ const Projects = () => {
           </span>
         </h1>
 
-        <div className='flex flex-wrap my-12 gap-16'>
+        <div className='grid grid-cols-1 md:grid-cols-2 my-12 gap-12'>
           {diplomas.map((diploma) => (
-            <div className='lg:w-[400px] w-full' key={diploma.name}>
-              <div className='block-container w-full h-80'>
-                <div className='rounded-xl flex justify-center items-center'>
-                  <img
-                    src={diploma.imageUrl}
-                    alt={diploma.name}
-                    className='w-full h-full object-contain'
-                  />
-                </div>
-              </div>
-
-              <div className='mt-5 flex flex-col'>
-                <h4 className='text-2xl font-poppins font-semibold'>
-                  {diploma.name}
-                </h4>
-                <p className='mt-2 text-slate-500'>{diploma.description}</p>
-              </div>
+            <div className='w-full rounded-xl border border-slate-200 p-6' key={diploma.name}>
+              <h2 className='text-2xl font-poppins font-semibold'>
+                {diploma.name}
+              </h2>
+              <p className='mt-2 text-slate-500'>{diploma.description}</p>
+              <p lang='fr' className='mt-4 text-sm font-medium text-slate-600'>
+                Justificatif disponible sur demande.
+              </p>
             </div>
           ))}
         </div>
@@ -47,33 +35,23 @@ const Projects = () => {
           </span>
         </h1>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12 gap-12'>
           {certificates.map((certificate) => (
-            <div className='w-full flex flex-col' key={certificate.name}>
-              <div className='block-container w-full h-80'>
-                <div className='rounded-xl flex justify-center items-center'>
-                  <img
-                    src={certificate.imageUrl}
-                    alt={certificate.name}
-                    className='w-full h-full object-contain'
-                  />
-                </div>
-              </div>
-
-              <div className='mt-20 flex flex-col items-center'>
-                <h4 className='text-2xl font-poppins font-semibold text-center'>
-                  {certificate.name}
-                </h4>
-                <p className='mt-2 text-slate-500 text-center'>{certificate.description}</p>
-              </div>
+            <div className='w-full rounded-xl border border-slate-200 p-6' key={certificate.name}>
+              <h2 className='text-2xl font-poppins font-semibold'>
+                {certificate.name}
+              </h2>
+              <p className='mt-2 text-slate-500'>{certificate.description}</p>
+              <p lang='fr' className='mt-4 text-sm font-medium text-slate-600'>
+                Justificatif disponible sur demande.
+              </p>
             </div>
           ))}
         </div>
-       
+
         <hr className='border-slate-200' />
         <CTA />
       </section>
-
     </>
   );
 };

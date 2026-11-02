@@ -1,4 +1,4 @@
-import { Attijari,Bgroupe, TPR,StageA,StageB,Master,Licence,Certificat,humanrights ,IHL } from "../assets/images";
+import { Attijari, Bgroupe, TPR } from "../assets/images";
 import {
     car,
     contact,
@@ -243,12 +243,10 @@ export const projects = [
 export const diplomas = [
   {
     name: "Bachelor",
-    imageUrl: Licence,
     description: "Bachelor's Degree in Management Information Systems",
   },
   {
     name: "Master",
-    imageUrl: Master,
     description: "Professional Master's Degree in Business Analytics",
   },
  
@@ -256,29 +254,24 @@ export const diplomas = [
 export const certificates = [
   {
     name: " 3B Soft Solutions",
-    imageUrl: StageA,
     description: "Data Analyst",
   },
 
   {
     name: " Attijari Bank",
-    imageUrl: StageB,
     description: "Growth Hacker",
   },
  
   {
     name: "TPR",
-    imageUrl: Certificat,
     description: "Export Sales Manager",
   },
   {
     name: "IHL",
-    imageUrl: IHL,
     description: "Certificate",
   },
   {
     name: "Humain Rights",
-    imageUrl: humanrights,
     description: "Certificate",
   },
 ];
